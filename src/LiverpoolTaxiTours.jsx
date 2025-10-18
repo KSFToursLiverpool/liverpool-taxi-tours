@@ -15,7 +15,7 @@ export default function LiverpoolTaxiTours() {
 
   return (
     <div style={{ fontFamily: 'sans-serif', backgroundColor: '#fdf8f5', color: '#111' }}>
-      
+
       {/* Header / Hero Section */}
       <header
         style={{
@@ -48,7 +48,7 @@ export default function LiverpoolTaxiTours() {
         style={{
           textAlign: 'center',
           padding: '4rem 2rem',
-          backgroundImage: 'url("https://images.unsplash.com/photo-1573705385-1d9c9c3a2e6b")',
+          backgroundImage: 'url("https://i.imgur.com/5Wj6uGA.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'white',
@@ -73,13 +73,108 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>Beatles Tour</h2>
         <img
-          src="https://images.unsplash.com/photo-1573705385-1d9c9c3a2e6b"
+          src="https://i.imgur.com/5ZCykDC.jpeg"
           alt="Beatles Tour"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
 
       {/* Anfield Tour */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>Anfield Tour</h2>
+        <img
+          src="https://i.imgur.com/Uqq39gL.jpeg"
+          alt="Anfield Stadium"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
 
-       
+      {/* Manchester Tour */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Manchester Tour</h2>
+        <img
+          src="https://i.imgur.com/NvzuIHt.jpeg"
+          alt="Manchester Tour"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* City Highlights */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>City Highlights</h2>
+        <img
+          src="https://i.imgur.com/UxeVbXu.jpeg"
+          alt="Liverpool City Highlights"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Football Tours */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Football Tours</h2>
+        <img
+          src="https://i.imgur.com/MnQB2O1.jpeg"
+          alt="Football Tours"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Contact Form */}
+      <section style={{ padding: '4rem 2rem', backgroundColor: 'white', textAlign: 'center' }}>
+        <h3 style={{ color: '#b00000', fontSize: '2rem', marginBottom: '1rem' }}>Contact Us</h3>
+        <form onSubmit={handleWhatsAppSend} style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
+          <label>Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          />
+
+          <label>Email</label>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          />
+
+          <label>Message</label>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+            rows="4"
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          ></textarea>
+
+          <button
+            type="submit"
+            style={{
+              backgroundColor: '#ffd700',
+              color: '#b00000',
+              padding: '0.75rem',
+              width: '100%',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+            }}
+          >
+            Send via WhatsApp
+          </button>
+        </form>
+      </section>
+
+      {/* Footer */}
+      <footer style={{ backgroundColor: '#b00000', color: 'white', textAlign: 'center', padding: '1rem' }}>
+        © {new Date().getFullYear()} Liverpool Taxi Tours |{' '}
+        <a href="https://wa.me/447379366381" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd700' }}>
+          Chat on WhatsApp
+        </a>
+      </footer>
+    </div>
+  );
+}
+
