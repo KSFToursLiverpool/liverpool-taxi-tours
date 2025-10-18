@@ -15,7 +15,16 @@ export default function LiverpoolTaxiTours() {
 
   return (
     <div style={{ fontFamily: 'sans-serif', backgroundColor: '#fdf8f5', color: '#111' }}>
-      <header style={{ backgroundColor: '#b00000', color: 'white', padding: '1.5rem', textAlign: 'center' }}>
+      
+      {/* Header / Hero Section */}
+      <header
+        style={{
+          backgroundColor: '#b00000',
+          color: 'white',
+          padding: '1.5rem',
+          textAlign: 'center',
+        }}
+      >
         <h1 style={{ color: '#ffd700' }}>Liverpool Taxi Tours</h1>
         <a
           href="https://wa.me/447379366381"
@@ -34,11 +43,12 @@ export default function LiverpoolTaxiTours() {
         </a>
       </header>
 
+      {/* Hero Section Background */}
       <section
         style={{
           textAlign: 'center',
           padding: '4rem 2rem',
-          backgroundImage: 'url(https://upload.wikimedia.org/wikipedia/commons/3/30/Liverpool_Waterfront_2018.jpg)',
+          backgroundImage: 'url("https://i.imgur.com/abc123.jpg")', // Liverpool Skyline
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'white',
@@ -59,6 +69,57 @@ export default function LiverpoolTaxiTours() {
         </motion.div>
       </section>
 
+      {/* Beatles Tour */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Beatles Tour</h2>
+        <img
+          src="https://i.imgur.com/def456.jpg" // Beatles Tour / Waterfront
+          alt="Beatles Tour"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Anfield Tour */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>Anfield Tour</h2>
+        <img
+          src="https://i.imgur.com/ghi789.jpg"
+          alt="Anfield Stadium"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Manchester Tour */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Manchester Tour</h2>
+        <img
+          src="https://i.imgur.com/jkl012.jpg"
+          alt="Manchester Tour"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* City Highlights */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>City Highlights</h2>
+        <img
+          src="https://i.imgur.com/mno345.jpg"
+          alt="Liverpool City Highlights"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Football Tours */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Football Tours</h2>
+        <img
+          src="https://i.imgur.com/pqr678.jpg"
+          alt="Football Tours"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* Contact Form */}
       <section style={{ padding: '4rem 2rem', backgroundColor: 'white', textAlign: 'center' }}>
         <h3 style={{ color: '#b00000', fontSize: '2rem', marginBottom: '1rem' }}>Contact Us</h3>
         <form onSubmit={handleWhatsAppSend} style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
@@ -106,6 +167,7 @@ export default function LiverpoolTaxiTours() {
         </form>
       </section>
 
+      {/* Footer */}
       <footer style={{ backgroundColor: '#b00000', color: 'white', textAlign: 'center', padding: '1rem' }}>
         © {new Date().getFullYear()} Liverpool Taxi Tours |{' '}
         <a href="https://wa.me/447379366381" target="_blank" rel="noopener noreferrer" style={{ color: '#ffd700' }}>
@@ -115,3 +177,4 @@ export default function LiverpoolTaxiTours() {
     </div>
   );
 }
+
