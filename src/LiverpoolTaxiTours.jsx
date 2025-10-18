@@ -48,7 +48,7 @@ export default function LiverpoolTaxiTours() {
         style={{
           textAlign: 'center',
           padding: '4rem 2rem',
-          backgroundImage: 'url("https://i.imgur.com/abc123.jpg")', // Liverpool Skyline
+          backgroundImage: 'url("https://i.imgur.com/abc123.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'white',
@@ -73,7 +73,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>Beatles Tour</h2>
         <img
-          src="https://i.imgur.com/def456.jpg" // Beatles Tour / Waterfront
+          src="https://i.imgur.com/def456.jpg"
           alt="Beatles Tour"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
