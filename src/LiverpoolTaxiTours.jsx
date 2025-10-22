@@ -29,14 +29,10 @@ export default function LiverpoolTaxiTours() {
   return (
     <div className="bg-neutral-50 text-neutral-900 font-sans">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center text-center">
-        <img
-          src={tours[0].image}
-          alt="Liverpool Skyline"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
-        />
-        <div className="relative z-10 bg-red-900/80 p-8 rounded-2xl">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Liverpool Taxi Tours & Transfers</h1>
+      <section className="relative h-[60vh] flex items-center justify-center text-center">
+        <div className="absolute inset-0 bg-red-900/80"></div>
+        <div className="relative z-10 p-8">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Liverpool Taxi Tours & Transfers</h1>
           <p className="text-lg md:text-xl text-white mb-6">
             Explore Liverpool and beyond in comfort with our 6-seater Hackney taxi
           </p>
@@ -44,7 +40,7 @@ export default function LiverpoolTaxiTours() {
             href="https://wa.me/4473793666381"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition"
+            className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition"
           >
             Book Now on WhatsApp
           </a>
@@ -54,16 +50,16 @@ export default function LiverpoolTaxiTours() {
       {/* Tours Section */}
       <section className="py-16 px-6 md:px-20 bg-red-50">
         <h2 className="text-4xl font-bold text-center mb-12 text-red-700">Our Tours & Services</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="flex flex-wrap justify-center gap-10">
           {tours.slice(1).map((tour, i) => (
             <motion.div
               key={i}
               whileHover={{ scale: 1.03 }}
-              className="bg-red-100 rounded-2xl overflow-hidden shadow-lg"
+              className="bg-red-100 rounded-2xl overflow-hidden shadow-lg w-[300px]"
             >
-              <img src={tour.image} alt={tour.title} className="w-full h-56 object-cover" />
+              <img src={tour.image} alt={tour.title} className="w-full h-48 object-cover" />
               <div className="p-6 bg-neutral-50">
-                <h3 className="text-2xl font-bold text-red-700 mb-2">{tour.title}</h3>
+                <h3 className="text-xl font-bold text-red-700 mb-2">{tour.title}</h3>
                 <p className="text-neutral-700">Discover this amazing location with our private taxi tours.</p>
               </div>
             </motion.div>
@@ -117,8 +113,3 @@ export default function LiverpoolTaxiTours() {
     </div>
   );
 }
-
-    
-   
-            
-   
