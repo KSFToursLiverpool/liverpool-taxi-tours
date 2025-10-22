@@ -27,49 +27,58 @@ export default function LiverpoolTaxiTours() {
   ];
 
   return (
-    <div className="bg-neutral-50 text-neutral-900 font-sans">
+    <div className="font-sans text-neutral-900">
+
+      {/* Header */}
+      <header className="bg-red-700 text-white flex justify-between items-center px-6 md:px-20 py-4">
+        <h1 className="text-xl md:text-2xl font-bold">Liverpool Taxi Tours</h1>
+        <a
+          href="https://wa.me/4473793666381"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg transition"
+        >
+          Book Now on WhatsApp
+        </a>
+      </header>
+
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center text-center">
         <img
           src={tours[0].image}
           alt="Liverpool Skyline"
-          className="absolute inset-0 w-full h-full object-cover opacity-80"
+          className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="relative z-10 p-8 bg-red-900/70 rounded-2xl">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Liverpool Taxi Tours & Transfers</h1>
-          <p className="text-lg md:text-xl text-white mb-6">
-            Explore Liverpool and beyond in comfort with our 6-seater Hackney taxi
-          </p>
-          <a
-            href="https://wa.me/4473793666381"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition"
-          >
-            Book Now on WhatsApp
-          </a>
+        <div className="relative z-10 p-6 md:p-12 bg-black/40 rounded-lg">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Explore Liverpool in comfort</h2>
+          <p className="text-lg md:text-xl text-white">Private taxi tours and transfers in a 6-seater Hackney cab</p>
         </div>
       </section>
 
-      {/* Tours Sections */}
-      {tours.slice(1).map((tour, i) => (
-        <section key={i} className="py-16 px-6 md:px-20 bg-red-50 flex justify-center">
-          <motion.div whileHover={{ scale: 1.02 }} className="w-full max-w-4xl rounded-2xl overflow-hidden shadow-lg">
-            <img src={tour.image} alt={tour.title} className="w-full object-cover rounded-t-2xl" />
-            <div className="p-6 bg-neutral-50">
-              <h3 className="text-2xl font-bold text-red-700 mb-2">{tour.title}</h3>
-              <p className="text-neutral-700">Discover this amazing location with our private taxi tours.</p>
-            </div>
+      {/* Tour Sections */}
+      <section className="py-12 px-6 md:px-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        {tours.slice(1).map((tour, i) => (
+          <motion.div
+            key={i}
+            whileHover={{ scale: 1.03 }}
+            className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center"
+          >
+            <h3 className="text-lg font-bold text-red-700 mt-4">{tour.title}</h3>
+            <img
+              src={tour.image}
+              alt={tour.title}
+              className="w-40 h-40 object-cover rounded-lg m-4"
+            />
           </motion.div>
-        </section>
-      ))}
+        ))}
+      </section>
 
       {/* Contact Form */}
       <section className="bg-red-700 text-white py-16 px-6 md:px-20">
-        <h2 className="text-4xl font-bold text-center mb-8">Contact Us</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
         <form
           onSubmit={handleWhatsAppSend}
-          className="max-w-xl mx-auto bg-white text-neutral-800 p-8 rounded-2xl shadow-lg space-y-4"
+          className="max-w-xl mx-auto bg-white text-neutral-900 p-8 rounded-xl shadow-lg space-y-4"
         >
           <input
             type="text"
@@ -110,6 +119,3 @@ export default function LiverpoolTaxiTours() {
     </div>
   );
 }
-
-    
-   
