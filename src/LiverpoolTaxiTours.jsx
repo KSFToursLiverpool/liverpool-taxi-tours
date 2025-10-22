@@ -9,17 +9,70 @@ export default function LiverpoolTaxiTours() {
   const handleWhatsAppSend = (e) => {
     e.preventDefault();
     const text = `Hello, my name is ${name}. My email is ${email}. Message: ${message}`;
-    const url = `https://wa.me/447379366381?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/4473793666381?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
   };
+
+  const tours = [
+    {
+      title: 'Liverpool Skyline',
+      image: 'https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670',
+      desc: 'The iconic waterfront and cityscape of Liverpool.',
+    },
+    {
+      title: 'The Beatles Tour',
+      image: 'https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277',
+      desc: 'Explore the musical history of Liverpool.',
+    },
+    {
+      title: 'Strawberry Field',
+      image: 'https://images.unsplash.com/photo-1590327352027-4f2f95180061?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670',
+      desc: 'Visit the legendary Strawberry Field gardens.',
+    },
+    {
+      title: 'Penny Lane',
+      image: 'https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287',
+      desc: 'See the iconic street immortalized by The Beatles.',
+    },
+    {
+      title: 'Anfield Stadium',
+      image: 'https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448',
+      desc: 'Home of Liverpool FC.',
+    },
+    {
+      title: 'Conwy Castle',
+      image: 'https://images.unsplash.com/photo-1697403471010-5b1b1f51236c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274',
+      desc: 'Historic castle tours.',
+    },
+    {
+      title: 'Manchester Stadium',
+      image: 'https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474',
+      desc: 'See Manchester United’s iconic stadium.',
+    },
+    {
+      title: 'Anglican Cathedral',
+      image: 'https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274',
+      desc: 'Visit the majestic Liverpool Anglican Cathedral.',
+    },
+    {
+      title: 'Liverpool City Highlights',
+      image: 'https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670',
+      desc: 'Experience the best city highlights in Liverpool.',
+    },
+    {
+      title: 'UK-wide Airport Transfers',
+      image: 'https://images.unsplash.com/photo-1726410238762-2388af04eadb?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2743',
+      desc: 'Reliable airport transfers across the UK.',
+    },
+  ];
 
   return (
     <div className="bg-neutral-50 text-neutral-900">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center text-center">
         <img
-          src="https://images.unsplash.com/photo-1542037104857-ffbb0b915dcd?auto=format&fit=crop&w=2000&q=80"
-          alt="Liverpool Skyline"
+          src={tours[0].image}
+          alt={tours[0].title}
           className="absolute inset-0 w-full h-full object-cover opacity-80"
         />
         <div className="relative z-10 bg-black/50 p-8 rounded-2xl">
@@ -28,7 +81,7 @@ export default function LiverpoolTaxiTours() {
             Explore Liverpool and beyond in comfort with our 6-seater Hackney taxi
           </p>
           <a
-            href="https://wa.me/447379366381"
+            href="https://wa.me/4473793666381"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition"
@@ -41,39 +94,8 @@ export default function LiverpoolTaxiTours() {
       {/* Tours Section */}
       <section className="py-16 px-6 md:px-20 bg-white">
         <h2 className="text-4xl font-bold text-center mb-12 text-red-700">Our Tours & Services</h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            {
-              title: 'City Tours',
-              desc: 'See the best of Liverpool, from the waterfront to historic architecture.',
-              image: 'https://images.unsplash.com/photo-1582550945154-66ea8fff3a9b?auto=format&fit=crop&w=1600&q=80',
-            },
-            {
-              title: 'Beatles Tours',
-              desc: 'Visit iconic Beatles landmarks like Penny Lane and Strawberry Field.',
-              image: 'https://images.unsplash.com/photo-1528892952291-009c663ce843?auto=format&fit=crop&w=1600&q=80',
-            },
-            {
-              title: 'Anfield Tours',
-              desc: 'A must for any Liverpool FC fan — explore the home of the Reds.',
-              image: 'https://images.unsplash.com/photo-1597423244020-4d8d46e2b5c1?auto=format&fit=crop&w=1600&q=80',
-            },
-            {
-              title: 'Manchester Tours',
-              desc: 'Take a trip to nearby Manchester to see its top attractions.',
-              image: 'https://images.unsplash.com/photo-1603279125998-b00e7fc8eac8?auto=format&fit=crop&w=1600&q=80',
-            },
-            {
-              title: 'Airport Transfers',
-              desc: 'Reliable, comfortable transfers to and from all major UK airports.',
-              image: 'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1600&q=80',
-            },
-            {
-              title: 'Custom Private Tours',
-              desc: 'Design your perfect day out with a private, flexible taxi tour.',
-              image: 'https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1600&q=80',
-            },
-          ].map((tour, i) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {tours.slice(1).map((tour, i) => (
             <motion.div
               key={i}
               whileHover={{ scale: 1.03 }}
@@ -135,4 +157,7 @@ export default function LiverpoolTaxiTours() {
     </div>
   );
 }
-
+ 
+             
+            
+   
