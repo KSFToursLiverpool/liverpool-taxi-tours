@@ -8,30 +8,28 @@ export default function LiverpoolTaxiTours() {
   const handleWhatsAppSend = (e) => {
     e.preventDefault();
     const text = `Hello, my name is ${name}. My email is ${email}. Message: ${message}`;
-    const url = `https://wa.me/4473793666381?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/447379366381?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
 
   const tours = [
-    { title: "The Beatles Tour", image: "https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277" },
+    { title: "Beatles Tour", image: "https://i.imgur.com/5ZCykDC.jpeg" },
     { title: "Strawberry Field", image: "https://images.unsplash.com/photo-1590327352027-4f2f95180061?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
     { title: "Penny Lane", image: "https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287" },
-    { title: "Anfield Stadium", image: "https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448" },
-    { title: "Conwy Castle", image: "https://images.unsplash.com/photo-1697403471010-5b1b1f51236c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274" },
-    { title: "Manchester Stadium", image: "https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474" },
-    { title: "Anglican Cathedral", image: "https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274" },
-    { title: "Liverpool City Highlights", image: "https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
+    { title: "Anfield Stadium", image: "https://i.imgur.com/Uqq39gL.jpeg" },
+    { title: "Manchester Tour", image: "https://i.imgur.com/NvzuIHt.jpeg" },
+    { title: "City Highlights", image: "https://i.imgur.com/UxeVbXu.jpeg" },
     { title: "UK-wide Airport Transfers", image: "https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671" },
   ];
 
   return (
     <div className="font-sans text-neutral-900">
 
-      {/* Top Header */}
+      {/* Header */}
       <header className="bg-red-700 text-white h-14 flex items-center justify-between px-6 md:px-20">
         <h1 className="text-lg font-bold">Liverpool Taxi Tours</h1>
         <a
-          href="https://wa.me/4473793666381"
+          href="https://wa.me/447379366381"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-1 rounded font-semibold transition"
@@ -40,24 +38,24 @@ export default function LiverpoolTaxiTours() {
         </a>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero */}
       <section className="relative h-[50vh] flex items-center justify-center text-center">
         <img
-          src="https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
+          src="https://i.imgur.com/5Wj6uGA.jpeg"
           alt="Liverpool Skyline"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
-        <div className="relative z-10 bg-black/40 p-6 md:p-12 rounded-lg">
+        <div className="relative z-10 bg-black/40 p-6 md:p-12 rounded-lg max-w-xl">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-2">
-            Explore Liverpool in comfort
+            Explore Liverpool in Comfort
           </h2>
           <p className="text-white text-lg md:text-xl">
-            Private taxi tours and transfers in a 6-seater Hackney cab
+            Private Taxi Tours and Transfers in a 6-Seater Hackney Cab
           </p>
         </div>
       </section>
 
-      {/* Tours Section */}
+      {/* Tour Cards */}
       <section className="py-12 px-6 md:px-20 flex flex-wrap justify-center gap-6">
         {tours.map((tour, i) => (
           <div key={i} className="w-40 flex flex-col items-center">
@@ -71,7 +69,7 @@ export default function LiverpoolTaxiTours() {
         ))}
       </section>
 
-      {/* Contact Section */}
+      {/* Contact */}
       <section className="bg-red-700 text-white py-16 px-6 md:px-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Contact Us</h2>
         <form
@@ -112,9 +110,8 @@ export default function LiverpoolTaxiTours() {
 
       {/* Footer */}
       <footer className="bg-neutral-900 text-neutral-300 text-center py-6">
-        <p>© {new Date().getFullYear()} Liverpool Taxi Tours. All Rights Reserved.</p>
+        <p>© {new Date().getFullYear()} Liverpool Taxi Tours | <a href="https://wa.me/447379366381" className="text-yellow-500">Chat on WhatsApp</a></p>
       </footer>
     </div>
   );
 }
-
