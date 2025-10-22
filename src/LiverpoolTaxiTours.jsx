@@ -13,12 +13,15 @@ export default function LiverpoolTaxiTours() {
   };
 
   const tours = [
-    { title: "Beatles Tour", image: "https://i.imgur.com/5ZCykDC.jpeg" },
-    { title: "Strawberry Field", image: "https://images.unsplash.com/photo-1590327352027-4f2f95180061?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
-    { title: "Penny Lane", image: "https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287" },
-    { title: "Anfield Stadium", image: "https://i.imgur.com/Uqq39gL.jpeg" },
-    { title: "Manchester Tour", image: "https://i.imgur.com/NvzuIHt.jpeg" },
-    { title: "City Highlights", image: "https://i.imgur.com/UxeVbXu.jpeg" },
+    { title: "Liverpool Skyline", image: "https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
+    { title: "Beatles Tour", image: "https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
+    { title: "Strawberry Field", image: "https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277" },
+    { title: "Penny Lane", image: "https://images.unsplash.com/photo-1590327352027-4f2f95180061?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" },
+    { title: "Anfield Stadium", image: "https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287" },
+    { title: "Manchester Stadium", image: "https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448" },
+    { title: "Manchester City Stadium", image: "https://images.unsplash.com/photo-1697403471010-5b1b1f51236c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274" },
+    { title: "Anglican Cathedral", image: "https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474" },
+    { title: "Liverpool City Highlights", image: "https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274" },
     { title: "UK-wide Airport Transfers", image: "https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671" },
   ];
 
@@ -41,7 +44,7 @@ export default function LiverpoolTaxiTours() {
       {/* Hero */}
       <section className="relative h-[50vh] flex items-center justify-center text-center">
         <img
-          src="https://i.imgur.com/5Wj6uGA.jpeg"
+          src="https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
           alt="Liverpool Skyline"
           className="absolute inset-0 w-full h-full object-cover opacity-70"
         />
