@@ -35,7 +35,7 @@ export default function LiverpoolTaxiTours() {
         </a>
       </header>
 
-      {/* Hero Section Background */}
+      {/* Hero Section */}
       <section
         style={{
           textAlign: 'center',
@@ -115,7 +115,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>Manchester United & City Tours</h2>
         <img
-          src="https://i.imgur.com/MnQB2O1.jpeg"
+          src="https://i.imgur.com/9mV6uH5.jpeg"
           alt="Manchester United & City Tours"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -125,7 +125,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>UK Airport Transfers</h2>
         <img
-          src="https://i.imgur.com/MnQB2O1.jpeg"
+          src="https://i.imgur.com/Z2dGChL.jpeg"
           alt="UK Airport Transfers"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -189,4 +189,3 @@ export default function LiverpoolTaxiTours() {
     </div>
   );
 }
-
