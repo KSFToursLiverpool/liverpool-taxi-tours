@@ -40,8 +40,7 @@ export default function LiverpoolTaxiTours() {
         style={{
           textAlign: 'center',
           padding: '4rem 2rem',
-          backgroundImage:
-            'url("https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670")',
+          backgroundImage: 'url("https://i.imgur.com/5Wj6uGA.jpeg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'white',
@@ -49,7 +48,12 @@ export default function LiverpoolTaxiTours() {
         }}
       >
         <div style={{ backgroundColor: 'rgba(0,0,0,0.4)', position: 'absolute', inset: 0 }}></div>
-        <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} style={{ position: 'relative', zIndex: 1 }}>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          style={{ position: 'relative', zIndex: 1 }}
+        >
           <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Explore Liverpool in Comfort</h2>
           <p style={{ maxWidth: '600px', margin: '1rem auto' }}>
             Private Taxi Tours and Transfers in a 6-Seater Hackney Cab. Beatles, Anfield, Manchester & more!
@@ -61,7 +65,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>Anglican Cathedral</h2>
         <img
-          src="https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274"
+          src="https://i.imgur.com/5ZCykDC.jpeg"
           alt="Anglican Cathedral"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -71,7 +75,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>Beatles Tour</h2>
         <img
-          src="https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277"
+          src="https://i.imgur.com/Uqq39gL.jpeg"
           alt="Beatles Tour"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -81,8 +85,8 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>City Highlights</h2>
         <img
-          src="https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
-          alt="Liverpool City Highlights"
+          src="https://i.imgur.com/NvzuIHt.jpeg"
+          alt="City Highlights"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
@@ -91,7 +95,7 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>Penny Lane</h2>
         <img
-          src="https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287"
+          src="https://i.imgur.com/UxeVbXu.jpeg"
           alt="Penny Lane"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -101,8 +105,8 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>Anfield Tour</h2>
         <img
-          src="https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448"
-          alt="Anfield Stadium"
+          src="https://i.imgur.com/MnQB2O1.jpeg"
+          alt="Anfield Tour"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
@@ -111,18 +115,18 @@ export default function LiverpoolTaxiTours() {
       <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>Manchester United & City Tours</h2>
         <img
-          src="https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474"
-          alt="Manchester Stadiums"
+          src="https://i.imgur.com/MnQB2O1.jpeg"
+          alt="Manchester United & City Tours"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
 
       {/* 7. UK Airport Transfers */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-        <h2>UK-wide Airport Transfers</h2>
+        <h2>UK Airport Transfers</h2>
         <img
-          src="https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671"
-          alt="Airport Transfers"
+          src="https://i.imgur.com/MnQB2O1.jpeg"
+          alt="UK Airport Transfers"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
@@ -132,15 +136,44 @@ export default function LiverpoolTaxiTours() {
         <h3 style={{ color: '#b00000', fontSize: '2rem', marginBottom: '1rem' }}>Contact Us</h3>
         <form onSubmit={handleWhatsAppSend} style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
           <label>Name</label>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)} required style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }} />
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          />
 
           <label>Email</label>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }} />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          />
 
           <label>Message</label>
-          <textarea value={message} onChange={(e) => setMessage(e.target.value)} required rows="4" style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}></textarea>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+            rows="4"
+            style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}
+          ></textarea>
 
-          <button type="submit" style={{ backgroundColor: '#ffd700', color: '#b00000', padding: '0.75rem', width: '100%', border: 'none', borderRadius: '8px', fontWeight: 'bold' }}>
+          <button
+            type="submit"
+            style={{
+              backgroundColor: '#ffd700',
+              color: '#b00000',
+              padding: '0.75rem',
+              width: '100%',
+              border: 'none',
+              borderRadius: '8px',
+              fontWeight: 'bold',
+            }}
+          >
             Send via WhatsApp
           </button>
         </form>
@@ -157,4 +190,3 @@ export default function LiverpoolTaxiTours() {
   );
 }
 
-        
