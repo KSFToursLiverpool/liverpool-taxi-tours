@@ -57,11 +57,11 @@ export default function LiverpoolTaxiTours() {
         </motion.div>
       </section>
 
-      {/* 1. Anglican Cathedral */}
+      {/* 1. Anglican Cathedral (now using City Highlights image) */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>Anglican Cathedral</h2>
         <img
-          src="https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274"
+          src="https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
           alt="Anglican Cathedral"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
@@ -77,12 +77,12 @@ export default function LiverpoolTaxiTours() {
         />
       </section>
 
-      {/* 3. City Highlights */}
+      {/* 3. City Highlights (now using Anglican Cathedral image) */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
         <h2>City Highlights</h2>
         <img
-          src="https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
-          alt="City Highlights"
+          src="https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274"
+          alt="Liverpool City Highlights"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
@@ -102,7 +102,7 @@ export default function LiverpoolTaxiTours() {
         <h2>Anfield Tour</h2>
         <img
           src="https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448"
-          alt="Anfield Tour"
+          alt="Anfield Stadium"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
@@ -112,17 +112,17 @@ export default function LiverpoolTaxiTours() {
         <h2>Manchester United & City Tours</h2>
         <img
           src="https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474"
-          alt="Manchester United & City Tours"
+          alt="Manchester Stadiums"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
 
       {/* 7. UK Airport Transfers */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-        <h2>UK Airport Transfers</h2>
+        <h2>UK-wide Airport Transfers</h2>
         <img
           src="https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671"
-          alt="UK Airport Transfers"
+          alt="Airport Transfers"
           style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
         />
       </section>
