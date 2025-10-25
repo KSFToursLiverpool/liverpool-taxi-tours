@@ -18,60 +18,113 @@ export default function LiverpoolTaxiTours() {
       {/* Header / Hero Section */}
       <header style={{ backgroundColor: '#b00000', color: 'white', padding: '1.5rem', textAlign: 'center' }}>
         <h1 style={{ color: '#ffd700' }}>Liverpool Taxi Tours</h1>
-        <a href="https://wa.me/447379366381" target="_blank" rel="noopener noreferrer" style={{ backgroundColor: '#ffd700', color: '#b00000', padding: '0.5rem 1rem', borderRadius: '8px', textDecoration: 'none', fontWeight: 'bold' }}>
+        <a
+          href="https://wa.me/447379366381"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            backgroundColor: '#ffd700',
+            color: '#b00000',
+            padding: '0.5rem 1rem',
+            borderRadius: '8px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+          }}
+        >
           Book Now on WhatsApp
         </a>
       </header>
 
       {/* Hero Section Background */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundImage: 'url("https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670")', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', position: 'relative' }}>
+      <section
+        style={{
+          textAlign: 'center',
+          padding: '4rem 2rem',
+          backgroundImage:
+            'url("https://images.unsplash.com/photo-1566328386592-86058b1a8938?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          color: 'white',
+          position: 'relative',
+        }}
+      >
         <div style={{ backgroundColor: 'rgba(0,0,0,0.4)', position: 'absolute', inset: 0 }}></div>
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} style={{ position: 'relative', zIndex: 1 }}>
           <h2 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>Explore Liverpool in Comfort</h2>
-          <p style={{ maxWidth: '600px', margin: '1rem auto' }}>Private Taxi Tours and Transfers in a 6-Seater Hackney Cab. Beatles, Anfield, Manchester & more!</p>
+          <p style={{ maxWidth: '600px', margin: '1rem auto' }}>
+            Private Taxi Tours and Transfers in a 6-Seater Hackney Cab. Beatles, Anfield, Manchester & more!
+          </p>
         </motion.div>
       </section>
 
-      {/* Beatles Tour */}
+      {/* 1. Anglican Cathedral */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>Anglican Cathedral</h2>
+        <img
+          src="https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274"
+          alt="Anglican Cathedral"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* 2. Beatles Tour */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>Beatles Tour</h2>
-        <img src="https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" alt="Beatles Tour" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
+        <img
+          src="https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277"
+          alt="Beatles Tour"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
       </section>
 
-      {/* Strawberry Field */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
-        <h2>Strawberry Field</h2>
-        <img src="https://images.unsplash.com/photo-1703237569199-694e272ad3bf?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2277" alt="Strawberry Field" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
-      </section>
-
-      {/* Penny Lane */}
+      {/* 3. City Highlights */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-        <h2>Penny Lane</h2>
-        <img src="https://images.unsplash.com/photo-1590327352027-4f2f95180061?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670" alt="Penny Lane" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
-      </section>
-
-      {/* Anfield Tour */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
-        <h2>Anfield Tour</h2>
-        <img src="https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287" alt="Anfield Stadium" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
-      </section>
-
-      {/* Manchester Tour */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-        <h2>Manchester Tour</h2>
-        <img src="https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448" alt="Manchester Tour" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
-      </section>
-
-      {/* City Highlights */}
-      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
         <h2>City Highlights</h2>
-        <img src="https://images.unsplash.com/photo-1661632359993-9667c4982b1c?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2274" alt="Liverpool City Highlights" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
+        <img
+          src="https://images.unsplash.com/photo-1679339469163-985cf14b7516?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2670"
+          alt="Liverpool City Highlights"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
       </section>
 
-      {/* Football Tours */}
+      {/* 4. Penny Lane */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>Penny Lane</h2>
+        <img
+          src="https://images.unsplash.com/photo-1737646021120-1f4c2ef81e19?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1287"
+          alt="Penny Lane"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* 5. Anfield Tour */}
       <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
-        <h2>Football Tours</h2>
-        <img src="https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671" alt="Football Tours" style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }} />
+        <h2>Anfield Tour</h2>
+        <img
+          src="https://images.unsplash.com/photo-1636959961919-985cbee8d6d9?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2448"
+          alt="Anfield Stadium"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* 6. Manchester United & City Tours */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem', backgroundColor: '#f5f0eb' }}>
+        <h2>Manchester United & City Tours</h2>
+        <img
+          src="https://images.unsplash.com/photo-1623607915241-a3151d59a9c8?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=3474"
+          alt="Manchester Stadiums"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
+      </section>
+
+      {/* 7. UK Airport Transfers */}
+      <section style={{ textAlign: 'center', padding: '4rem 2rem' }}>
+        <h2>UK-wide Airport Transfers</h2>
+        <img
+          src="https://images.unsplash.com/photo-1723059518530-1feec72f2771?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=2671"
+          alt="Airport Transfers"
+          style={{ width: '100%', maxWidth: '600px', borderRadius: '12px', marginTop: '1rem' }}
+        />
       </section>
 
       {/* Contact Form */}
@@ -80,10 +133,13 @@ export default function LiverpoolTaxiTours() {
         <form onSubmit={handleWhatsAppSend} style={{ maxWidth: '500px', margin: '0 auto', textAlign: 'left' }}>
           <label>Name</label>
           <input type="text" value={name} onChange={(e) => setName(e.target.value)} required style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }} />
+
           <label>Email</label>
           <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }} />
+
           <label>Message</label>
           <textarea value={message} onChange={(e) => setMessage(e.target.value)} required rows="4" style={{ display: 'block', width: '100%', marginBottom: '1rem', padding: '0.75rem' }}></textarea>
+
           <button type="submit" style={{ backgroundColor: '#ffd700', color: '#b00000', padding: '0.75rem', width: '100%', border: 'none', borderRadius: '8px', fontWeight: 'bold' }}>
             Send via WhatsApp
           </button>
@@ -101,3 +157,4 @@ export default function LiverpoolTaxiTours() {
   );
 }
 
+        
